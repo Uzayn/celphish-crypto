@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        lblue: '#6DCFF6',
+                        dblue: '#14467C',
+                        grey: '#BDB8B8',
+                        bgrey: '#F5F5F5'
+                    },
+                    backgroundImage: {
+                        'hero': "url('./resources/hero.png')",
+                        'about': "url(./resources/about.png)"
+                    }
+                }
+            }
+        }
+    </script>
+    <title>about</title>
+</head>
+
+<body>
+    <div class="md:h-screen">
+        <div class="flex justify-between bg-bgrey h-1/6">
+            <div class="m-5 ml-10">
+                <a href="index.html"><img src="resources/Group 2.png" alt="logo"></a>
+            </div>
+            <div class="mr-10 text-grey font-semibold h-5/6 hidden md:contents  ">
+                <ul class="flex">
+                    <li class="m-8 hover:text-dblue"><a href="">Home</a></li>
+                    <li class="m-8 hover:text-dblue"><a href="">What we offer</a></li>
+                    <li class="m-8 hover:text-dblue"><a href="">About</a></li>
+                    <li class="m-8 hover:text-dblue"><a href="">The Smartphone Boom</a></li>
+                    <li class="m-8 hover:text-dblue"><a href="">Roadmap</a></li>
+                    <li class="m-8 hover:text-dblue"><a href="">Takenomics</a></li>
+                    <li class="m-8 hover:text-dblue" s><a href="">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-bgrey md:bg-hero text-center text-dblue md:text-white w-auto h-5/6">
+        </div>
+
+        <div class="md:hidden"><img src="resources/about.png" alt=""></div>
+
+        <div>
+            <div class="">
+                About
+            </div>
+            <div>
+                Celphish Finance is a community-driven project that enables multi-chain liquidity sourcing and trading from various liquidity sources, such as DEXs that operate on several blockchain networks. This will allow users to trade and swap tokens at the lowest
+                prices at the time. Our goal is to make crypto holders and enthusiasts perform crypto activities with their smartphones without any barriers.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
